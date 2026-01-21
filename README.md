@@ -26,44 +26,44 @@ The dataset includes **customer demographics, account information, service usage
 ## 📈 Exploratory Data Analysis (EDA)
 
 ### 🔹 01_churn_distribution.png – Target Balance Pie Chart
-This chart shows the proportion of churned vs retained customers.  
+![Churn Distribution](outputs/01_churn_distribution.png)  
 **Insight:** Churn is imbalanced; most customers are retained. This emphasizes the importance of recall-focused evaluation and techniques like SMOTE for handling class imbalance.
 
 ### 🔹 02_dist_tenure.png – Customer Tenure Distribution
-Displays the distribution of customer tenure.  
+![Tenure Distribution](outputs/02_dist_tenure.png)  
 **Insight:** Customers with shorter tenure are more likely to churn, highlighting the need for early retention strategies.
 
 ### 🔹 02_dist_MonthlyCharges.png – Monthly Charges Distribution
-Shows how monthly charges vary across the customer base.  
+![Monthly Charges](outputs/02_dist_MonthlyCharges.png)  
 **Insight:** Customers paying higher monthly charges tend to churn more, possibly due to perceived cost vs. value.
 
 ### 🔹 02_dist_TotalCharges.png – Total Charges Distribution
-Visualizes total charges billed to each customer.  
+![Total Charges](outputs/02_dist_TotalCharges.png)  
 **Insight:** Low total charges are often linked to early churn, while high total charges usually belong to long-term retained customers.
 
 ### 🔹 03_cat_Contract.png – Contract Type Analysis
-Displays churn by contract type (Month-to-Month, One Year, Two Year).  
+![Contract Type](outputs/03_cat_Contract.png)  
 **Insight:** Month-to-month customers have the highest churn risk, suggesting incentives for longer contracts could improve retention.
 
 ### 🔹 03_cat_InternetService.png – Internet Service Type Analysis
-Shows churn rates for different internet services (DSL, Fiber Optic, None).  
+![Internet Service](outputs/03_cat_InternetService.png)  
 **Insight:** Fiber Optic customers show higher churn, likely due to service expectations not being met.
 
 ### 🔹 03_cat_PaymentMethod.png – Payment Method Analysis
-Churn by payment method (Electronic Check, Mailed Check, Bank Transfer, Credit Card).  
+![Payment Method](outputs/03_cat_PaymentMethod.png)  
 **Insight:** Customers using electronic checks churn more frequently; switching them to automatic payments could improve retention.
 
 ### 🔹 03_cat_TechSupport.png – Tech Support Usage
-Analyzes churn among customers with or without tech support subscriptions.  
+![Tech Support](outputs/03_cat_TechSupport.png)  
 **Insight:** Customers without tech support are more likely to leave, indicating service support is a retention driver.
 
 ### 🔹 03_cat_OnlineSecurity.png – Online Security Service
-Shows churn based on the subscription to online security services.  
+![Online Security](outputs/03_cat_OnlineSecurity.png)  
 **Insight:** Customers without online security are at higher churn risk, suggesting cross-selling premium services could help retain them.
 
 ### 🔹 04_correlation_matrix.png – Correlation Heatmap
-Shows correlation among numerical features.  
-**Insight:** Tenure and total charges are strongly correlated; higher tenure usually means higher total charges. Engineered features like AvgMonthlySpend and ServiceCount improve predictive performance.
+![Correlation Heatmap](outputs/04_correlation_matrix.png)  
+**Insight:** Tenure and total charges are strongly correlated; engineered features like AvgMonthlySpend and ServiceCount improve predictive performance.
 
 ---
 
@@ -98,12 +98,3 @@ Shows correlation among numerical features.
 - **Imbalanced Data Handling:** Imbalanced-learn (SMOTE)  
 - **Deployment:** Streamlit Cloud  
 - **Model Persistence:** Joblib  
-
----
-
-## ✅ Highlights
-
-- End-to-end **customer churn prediction pipeline**  
-- **Business insights and retention recommendations** based on data  
-- Deployed **interactive Streamlit application**  
-- Easy to **reproduce, extend, and demonstrate** in interviews
