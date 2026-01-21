@@ -17,7 +17,7 @@ The system is deployed on **Streamlit Cloud**, allowing interactive churn predic
 
 ## 📊 Dataset
 
-**Telecom customer churn dataset** – three words: *Telco customer churn*  
+**Telecom customer churn dataset**
 
 The dataset includes **customer demographics, account information, service usage, and churn label**, enabling predictive modeling and business insights.
 
