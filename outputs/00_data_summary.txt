@@ -1,0 +1,45 @@
+DATASET SUMMARY REPORT
+======================
+
+Rows: 7043
+Columns: 22
+
+MISSING VALUES:
+customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+ChurnNumeric        0
+
+CHURN STATISTICS:
+Churn
+No     0.73463
+Yes    0.26537
+
+NUMERICAL STATISTICS:
+       SeniorCitizen       tenure  MonthlyCharges  TotalCharges  ChurnNumeric
+count    7043.000000  7043.000000     7043.000000   7043.000000   7043.000000
+mean        0.162147    32.371149       64.761692   2281.916928      0.265370
+std         0.368612    24.559481       30.090047   2265.270398      0.441561
+min         0.000000     0.000000       18.250000     18.800000      0.000000
+25%         0.000000     9.000000       35.500000    402.225000      0.000000
+50%         0.000000    29.000000       70.350000   1397.475000      0.000000
+75%         0.000000    55.000000       89.850000   3786.600000      1.000000
+max         1.000000    72.000000      118.750000   8684.800000      1.000000
